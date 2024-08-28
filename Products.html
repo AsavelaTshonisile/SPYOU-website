@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SPYOU</title>
+    <link rel="icon" href="LOGO.jpg" type="image/icon type">
+    <link rel="stylesheet" href="style_two.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <a href="First Website.html"><img class="logo" src="LOGO.jpg" width="250" height="250" alt="logo"></a>
+    <nav>   
+      <ul class="class_links">
+        <li><a href="Contact Us.html">Contact Us</a></li>
+        <li><a href="fnal.html ">Tips and Info</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="OUR website.html">About</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="cart.html"><button>Cart</button></a>
+</header>
+
+<main>
+    <div class="small_container product_page">
+        <table>
+            <tr class="center_row">
+                <th><b>Products</b></th>    
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart_info">
+                        <img src="Product 1 Image.png" width="250" height="250">
+                        <div>
+                            <h2>You Package One</h2>
+                            <br>
+                            <h3>Price: R110.00</h3>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_para">
+                        <p>This period pad bundle provides all the protection you need at a budget-friendly price.
+                         This package includes two packs of ultra-absorbent pads for day/nighttime wear or a mix, ensuring you stay comfortable and confident throughout your cycle.
+                         Don't miss out on this incredible value!</p>
+                    <button class="cart" data-product="You Package One" data-price="110.00">
+                        Add to cart
+                    </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart_info">
+                        <img src="Product 2 Image.png" width="250" height="250">
+                        <div>
+                            <h2>You Package Two</h2>
+                            <br>
+                            <h3>Price: R130.00</h3>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_para">
+                        <p>Stock up and save! Our period pad bundle provides all the protection you need at a budget-friendly price.
+                         This package includes two packs of ultra-absorbent pads for day/nighttime wear or a mix and a pack of tampons, ensuring you stay comfortable and confident throughout your cycle.
+                         Don't miss out on this incredible value!</p>
+                    <button class="cart" data-product="You Package Two" data-price="130.00">
+                        Add to cart
+                    </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart_info">
+                        <img src="Product 3 Image.png" width="250" height="250">
+                        <div>
+                            <h2>You Package Three</h2>
+                            <br>
+                            <h3>Price: R160.00</h3>
+                            <br>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="table_para">
+                        <p>Our largest offered package, the You Package Three period pad bundle provides all the protection you need at a unbeatable price.
+                         This package includes two packs of ultra-absorbent pads for day/nighttime wear or a mix, a pack of tampons and feminine wipes, ensuring you stay comfortable and confident throughout your cycle.
+                         Don't miss out on this incredible value!</p>
+                    <button class="cart" data-product="You Package Three" data-price="160.00">
+                        Add to cart
+                    </button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</main>
+
+<script>
+    document.querySelectorAll('.cart').forEach(button => {
+        button.addEventListener('click', addToCart);
+    });
+
+    function addToCart(event) {
+        const productName = event.target.dataset.product;
+        const price = parseFloat(event.target.dataset.price);
+
+        // Retrieve existing cart items or initialize an empty array
+        let cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
+
+        // Add the current product to the cart items array
+        cartItems.push({ productName, price });
+
+        // Store the updated cart items array in sessionStorage
+        sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+        // Redirect to the cart page
+        window.location.href = 'cart.html';
+    }
+</script>
+
+</body>
+<footer>
+
+<div class = "footer container ">
+<div class = "socialIcons">
+<a href = "https://www.facebook.com/unicefindia/videos/364288006655191/" target="_blank"><i class = " fa-brands fa-facebook " ></i></a>
+<a href = "https://www.instagram.com/menstrualhygieneday/" target="_blank"><i class = " fa-brands fa-instagram "></i></a>
+<a href = "https://x.com/okesfoundation/status/1633361268475146240?t=zwkJNR1buGkCm8bE06ezwQ&s=08" target="_blank"><i class = " fa-brands fa-twitter " ></i></a>
+<a href = ""><i class = " fa-brands fa-whatsapp" ></i></a>
+
+</div>
+<div class= "footerNav">
+<ul style = "margin-left: 25%;" >
+<li><a href="OUR website.html">About</a></li>
+<li><a href="fnal.html">Products</a></li>
+<li><a href="Products.html">Tips and Info</a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+
+</ul>
+</div>
+</div>
+<div class= "footerBottom ">
+<p> Copyright 2024 Designed by <span class=" designer">SPYOU</p>
+</div>
+
+</footer>
+</body>
+</html>
+
+          
+       
+
+
+</html>

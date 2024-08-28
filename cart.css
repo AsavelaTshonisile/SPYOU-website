@@ -1,0 +1,159 @@
+* {  
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans' , sans-serif;
+        
+}
+
+li, a, button {
+                font-family: 'Open Sans' , sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #458444;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        hover: background-color: #fc6c6c;
+
+}
+
+header {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10%
+}
+
+.logo {
+        cusor: pointer;
+}
+
+.class_links {
+        list-style: none;
+}
+
+.class_links li {
+        display: inline-block;
+        padding: 0 20px;
+}
+
+.class_links li a {
+        transition: all 0.3s ease 0s;
+}
+
+.class_links li a: hover {
+        color: #b9daab
+}
+
+button {
+        padding: 9px 25px;
+        background-color: rgba(185,218,171,1);
+        border: none;
+        border-radius: 50px;
+        cusor: pointer;
+        transition: all 0.3s ease 0s;
+}
+
+button:hover {
+        background-color: rgba(185,218,171,0.8);
+}
+
+
+ footer {
+	background-color: rgba(185,218,171,0.8);
+	margin-top: 200px;
+	
+ 
+.footerContainer { 
+                   width:100%
+                   padding: 70px 30px 20px;
+}
+table {
+            border-collapse: collapse;
+            width: 90%;
+	    
+        }
+        th, td {
+            padding: 2px;
+            text-align: center;
+        }
+        body {
+            background-color: creamwhite;        
+        }
+
+.socialIcons     { 
+                   display: flex;
+                   justify-content: center ;
+}
+
+.socialIcons    a{ 
+                   text-decoration:none;
+                   padding:20px;
+                   background-color:white;
+                   margin:20px;
+                   border-radius:50%
+}
+
+.socialIcons  a  i{
+                   font-size:2em;
+                   color:rgba( 185,218,171,0.8);
+                   opacity:0.9;
+}
+
+.socialIcons    a:hover  {
+                            background-color:green;
+                            transmition:0.5s;
+}
+
+.socialIcons    a:hover  i{
+                            background-color:green;
+                            transmition:0.5;
+}
+
+
+.footerNav        {
+                    margin: 30px 10;
+               
+                    
+                    
+}
+
+.footerNav       ul{
+
+                     display: flex ;
+                     justfy-content:center ;
+                     text-align:center;
+                     list-style-type:none;
+                    
+                    
+}
+
+.footerNav ul li  a{
+                    color :grey;
+                    margin:20px;
+                    text-decoration:none;
+                    font-size: 1.3em;
+                    opacity:0.7;
+                    transition :0.5s ;
+                    text-align:center; 
+                    list-style-type:none;
+}
+
+.footerBottom       { 
+                     background-color:rgba( 185,218,171,0.8);
+                     padding:20px;
+                     text-align:center 
+
+}
+
+.footerBottom  p{     
+                      color: grey;
+}
+
+.designer       { 
+                     opacity:0.7;
+                     text-transform: uppercase;
+                     letter-spacing:1px
+                     font-weight:400;
+                     margin: 0px 5px;
+}
